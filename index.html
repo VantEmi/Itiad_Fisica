@@ -1,145 +1,213 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fisica y Simulación</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>VANTE | Portafolio de Física y Simulación</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #221F36;
+            --violet: #5F4B8B;
+            --light: #FCFAFA;
+            --green: #6F9283;
+            --red: #931621;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top, #2b2550, var(--bg));
+            color: var(--light);
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 80px 20px 40px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            color: var(--green);
+            margin-top: 10px;
+        }
+
+        .counter {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* CARD */
+        .card {
+            background: rgba(95, 75, 139, 0.15);
+            border: 1px solid rgba(95, 75, 139, 0.35);
+            border-radius: 18px;
+            padding: 20px;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--green);
+        }
+
+        .card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            border-radius: 12px;
+            border: none;
+        }
+
+        /* Shorts */
+        .short iframe {
+            height: 560px;
+            max-width: 320px;
+            margin: auto;
+            display: block;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Portafolio de Fisica y Simulación
-        By Vante
-    </h1>
-<section>
-    <h2>Hotcake con Miel</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xT5LZojb-4I?si=apzUze2YPc2OMnw1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</section>
-    
-<section>
-    <h2>Caida Libre</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CiQ6q7YO4LE?si=Zw9CEHoe1x_dejvB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</section>
 
-<section>
-    <h2>Plano Inclinado</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/RhqEE9NkMC0?si=2kJ5WNyzfuh6Q-Ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</section>
+    <div class="hero">
+        <h1>Portafolio de Física y Simulación</h1>
+        <p>VANTE · Emiliano Cervantes</p>
+        <div class="counter">16 proyectos en simulación física</div>
+    </div>
 
-<section>
-    <h2>Práctica Boliche</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2YY7xEmacME?si=LET1VYDKFrn3uNRv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</section>
+    <div class="grid">
 
-<section>
-    <h2>Constraints (Puerta)</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/cU8purS6ZsA?si=WXmDjUQqinUe0zCq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</section>
+        <div class="card">
+            <h2>Hotcake con Miel</h2>
+            <iframe height="315" src="https://www.youtube.com/embed/xT5LZojb-4I" allowfullscreen></iframe>
+        </div>
 
-<section>
-    <h2>Particulas</h2>
-        <div style="text-align:left;">
-    <iframe
-        width="315"
-        height="560"
-        src="https://youtube.com/embed/7lcL51uLSMg"
-        title="YouTube Shorts player"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
-</div>
-</section>
+        <div class="card">
+            <h2>Caída Libre</h2>
+            <iframe height="315" src="https://www.youtube.com/embed/CiQ6q7YO4LE" allowfullscreen></iframe>
+        </div>
 
-<section>
-    <h2>Cell Fracture</h2>
-       <div style="text-align:left;">
-    <iframe
-        width="315"
-        height="560"
-        src="https://youtube.com/embed/jlTjGi8hD40"
-        title="YouTube Shorts player"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
-</div>
-</section>
+        <div class="card">
+            <h2>Plano Inclinado</h2>
+            <iframe height="315" src="https://www.youtube.com/embed/RhqEE9NkMC0" allowfullscreen></iframe>
+        </div>
 
-<section>
-    <h2>Cloth Bandera</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/q4uWEwX7hyQ?si=PcURH54AUNtcE39K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</section>
+        <div class="card">
+            <h2>Práctica Boliche</h2>
+            <iframe height="315" src="https://www.youtube.com/embed/2YY7xEmacME" allowfullscreen></iframe>
+        </div>
 
-<section>
-    <h2>Develación Auto (Targets)</h2>
-        <div style="text-align:left;">
-    <iframe
-        width="315"
-        height="560"
-        src="https://youtube.com/embed/doI1LXwSZqc"
-        title="YouTube Shorts player"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
-</div>
-</section>
+        <div class="card">
+            <h2>Constraints (Puerta)</h2>
+            <iframe height="315" src="https://www.youtube.com/embed/cU8purS6ZsA" allowfullscreen></iframe>
+        </div>
 
-<section>
-    <h2>Particulas con Turbulencia</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/N1W_ocUTNxM?si=y3_aC2rsZiNUaiDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</section>
+        <div class="card short">
+            <h2>Partículas</h2>
+            <iframe src="https://youtube.com/embed/7lcL51uLSMg" allowfullscreen></iframe>
+        </div>
 
-<section>
-    <h2>Practica Fuego</h2>
-        <div style="text-align:left;">
-    <iframe
-        width="315"
-        height="560"
-        src="https://www.youtube.com/embed/pgl_eU1qsQM"
-        title="YouTube Shorts player"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
-</div>
-</section>
+        <div class="card short">
+            <h2>Cell Fracture</h2>
+            <iframe src="https://youtube.com/embed/jlTjGi8hD40" allowfullscreen></iframe>
+        </div>
 
-<section>
-    <h2>Practica Fluidos</h2>
-        <div style="text-align:left;">
-    <iframe
-        width="315"
-        height="560"
-        src="https://www.youtube.com/embed/Ce8K2fkrQUU"
-        title="YouTube Shorts player"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
-</div>
-</section>
+        <div class="card">
+            <h2>Cloth Bandera</h2>
+            <iframe height="315" src="https://www.youtube.com/embed/q4uWEwX7hyQ" allowfullscreen></iframe>
+        </div>
 
-<section>
-    <h2>Practica Demolición</h2>
-        <div style="text-align:left;">
-    <iframe
-        width="315"
-        height="560"
-        src="https://www.youtube.com/embed/ocD21gMvkkI"
-        title="YouTube Shorts player"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
-</div>
-</section>
+        <div class="card short">
+            <h2>Auto Develación</h2>
+            <iframe src="https://youtube.com/embed/doI1LXwSZqc" allowfullscreen></iframe>
+        </div>
 
-<section>
-    <h2>Practica Columpio</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GCb8qpJMSJ4?si=et6V4_GX8FUzOMqd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</section>
+        <div class="card">
+            <h2>Partículas con Turbulencia</h2>
+            <iframe height="315" src="https://www.youtube.com/embed/N1W_ocUTNxM" allowfullscreen></iframe>
+        </div>
 
-<section>
-    <h2>Practica Soft Bodys</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/PN3CSwWzTeI?si=7BF09BEZhJGw6frn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/le4fXMoPOfA?si=BL0z-xwFsN1mEZj6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</section>
+        <div class="card short">
+            <h2>Fuego</h2>
+            <iframe src="https://www.youtube.com/embed/pgl_eU1qsQM" allowfullscreen></iframe>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <div class="card short">
+            <h2>Fluidos</h2>
+            <iframe src="https://www.youtube.com/embed/Ce8K2fkrQUU" allowfullscreen></iframe>
+        </div>
+
+        <div class="card short">
+            <h2>Demolición</h2>
+            <iframe src="https://youtube.com/embed/ocD21gMvkkI" allowfullscreen></iframe>
+        </div>
+
+        <div class="card">
+            <h2>Columpio</h2>
+            <iframe height="315" src="https://www.youtube.com/embed/GCb8qpJMSJ4" allowfullscreen></iframe>
+        </div>
+
+        <div class="card">
+            <h2>Soft Bodies</h2>
+            <iframe height="315" src="https://www.youtube.com/embed/PN3CSwWzTeI" allowfullscreen></iframe>
+            <br><br>
+            <iframe height="315" src="https://www.youtube.com/embed/le4fXMoPOfA" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+    <footer>
+        VANTE · Portafolio de Simulación Física · 2026
+    </footer>
+
 </body>
+
 </html>
